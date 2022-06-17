@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>where</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/_reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/_darkmode.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="header-box">
+          <div class="weather">
+            <span class="weatherInfo"></span>
+            <span class="weatherIcon"></span>
+          </div>
+          <div class="toggle-box">
+            <i class="ic-moon" value="change"></i>
+            <div class="toggle">
+              <input type="checkbox" name="toggle1" id="toggle1" value="1" />
+              <label for="toggle1" id="toggleDiv"></label>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2 class="clock"></h2>
+        <h2 class="date"></h2>
+        <form
+          action="https://search.naver.com/search.naver"
+          method="GET"
+          id="search"
+        >
+          <div class="search-bar">
+            <i class="ic-search"></i>
+            <input
+              class="keyword"
+              type="text"
+              name="query"
+              maxlength="255"
+              value=""
+              autocomplete="off"
+              placeholder="검색어를 입력하세요."
+            />
+          </div>
+        </form>
+        <div id="todo-box">
+          <p class="title">TODO LIST</p>
+          <form id="todo-form">
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="Add your todo"
+              required
+              autocomplete="off"
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/darkmode.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>

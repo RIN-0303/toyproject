@@ -1,0 +1,73 @@
+/* DARK MODE CSS */
+
+.dark-mode body {
+  background-color: rgb(7, 7, 7);
+  color: white;
+}
+
+.dark-mode #container {
+  background-color: rgb(36, 33, 33);
+}
+
+.dark-mode .clock,
+.dark-mode .date {
+  color: #7a7373;
+}
+
+.dark-mode .weatherInfo {
+  color: rgb(156, 147, 145);
+}
+
+.dark-mode .ic-moon {
+  color: yellow;
+}
+
+/* Search CSS */
+.dark-mode .ic-search::before,
+.dark-mode input::placeholder {
+  color: rgb(77, 73, 73);
+}
+
+/* TODO CSS */
+.dark-mode .keyword,
+.dark-mode #todo-input {
+  box-shadow: none;
+  background-color: #929090;
+}
+
+.dark-mode .keyword {
+  border: rgb(202, 198, 198) 1px solid;
+}
+.dark-mode .keyword:focus,
+.dark-mode #todo-input:focus {
+  box-shadow: 0px 0px 5px 3px rgba(114, 131, 126, 0.8);
+}
+
+.dark-mode #todo-box {
+  box-shadow: none;
+  color: rgb(161, 156, 156);
+  background-color: #3f3d3d;
+}
+
+.dark-mode #todo-input {
+  padding-left: 10px;
+}
+
+.dark-mode .delBtn {
+  font-size: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #1f1d1d;
+  border: #ffffff;
+  box-shadow: 1px 1px 1px 1px #e9dfdf;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+  height: 20px;
+}
+
+.dark-mode .delBtn:hover {
+  color: white;
+  background-color: #fc2222;
+}

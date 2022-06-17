@@ -1,0 +1,249 @@
+@import url('../styles/_fonts.css');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: rgb(248, 212, 94);
+  margin: 0 auto;
+}
+
+#container {
+  background-color: rgb(243, 234, 234);
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  width: 1250px;
+  height: 100vh;
+  border-radius: 30px;
+}
+
+/* Weather CSS */
+.weather {
+  display: flex;
+}
+
+.weatherInfo {
+  font-size: 0.9em;
+  color: lightslategray;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.w-img {
+  width: 2.2em;
+  margin-top: -2px;
+  margin-left: -5px;
+}
+
+/* Clock CSS */
+.clock {
+  color: navy;
+  text-shadow: -1px 1px 3px black;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.date {
+  color: navy;
+  text-shadow: -1px 1px 3px black;
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* toggle btn for Dark mode */
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-box {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.ic-moon {
+  font-size: 25px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle label {
+  display: block;
+  width: 49px;
+  height: 25px;
+  text-indent: -250%;
+  user-select: none;
+}
+
+.toggle label::before,
+.toggle label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.toggle label::before {
+  width: 100%;
+  height: 100%;
+  background-color: #eee1e1;
+  border-radius: 1em;
+  transition: background-color 0.25s ease;
+}
+
+.toggle label::after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgb(37, 71, 146);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+  transition: left 0.25s ease;
+}
+
+.toggle input:checked + label::before {
+  background-color: rgb(65, 206, 164);
+}
+
+.toggle input:checked + label::after {
+  left: 25px;
+}
+
+/* Search CSS */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.keyword {
+  font-size: 20px;
+  padding-left: 35px;
+  width: 70%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: -3px -5px 9px rgba(255, 255, 255, 0.45),
+    3px 2px 9px -5px rgba(94, 104, 121, 0.3);
+  outline-style: none;
+}
+
+.keyword:focus {
+  box-shadow: rgba(99, 144, 228, 0.3) 0px 0px 5px 3px;
+  border: rgba(15, 192, 139, 0.3);
+}
+
+.ic-search::before {
+  color: gray;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 7px;
+  font-size: 25px;
+  background-color: none;
+}
+
+/* TODO CSS */
+
+#todo-box {
+  margin: 0 auto;
+  padding-bottom: 3px;
+  width: 40%;
+  height: 100%;
+  box-shadow: -3px -5px 9px rgba(255, 255, 255, 0.45),
+    3px 2px 9px -5px rgba(94, 104, 121, 0.3);
+  border: none;
+  border-radius: 20px;
+  background-color: #fdfdfd8c;
+}
+#todo-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  box-shadow: -3px -5px 9px rgba(255, 255, 255, 0.45),
+    3px 2px 9px -5px rgba(94, 104, 121, 0.3);
+  border: none;
+}
+
+#todo-input:focus {
+  box-shadow: rgba(111, 136, 168, 0.7) 0px 0px 8px 1px;
+  outline: none;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#todo-list {
+  width: 400px;
+  height: 380px;
+  margin-left: 10%;
+  overflow-y: auto;
+  text-align: start;
+}
+
+.delBtn {
+  font-size: 5px;
+  color: red;
+  font-weight: bold;
+  background-color: #faf2f2;
+  border: #ffffff;
+  box-shadow: 1px 1px 1px 1px #e9dfdf;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+  height: 20px;
+}
+
+.delBtn:hover {
+  color: white;
+  background-color: #fc2222;
+}
+
+#chkDone {
+  margin-top: 7px;
+}
+
+#todo-list span {
+  padding-bottom: 5px;
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list li:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+#todo-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scrollbar CSS */
+#todo-list::-webkit-scrollbar-thumb {
+  background-color: rgb(240, 218, 148);
+  border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-track {
+  background-color: rgb(85, 80, 80);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
