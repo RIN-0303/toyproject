@@ -38,7 +38,7 @@ Dark Mode와 Light Mode를 토클버튼으로 on, off될 수 있도록 구현하
 
 
 
-<video src="https://user-images.githubusercontent.com/102499247/193011975-b0db44f9-9b32-41bb-9529-b0cecbee8d75.mp4">
+<video src="https://user-images.githubusercontent.com/102499247/193011975-b0db44f9-9b32-41bb-9529-b0cecbee8d75.mp4"><br>
 
 
 
@@ -56,7 +56,7 @@ Dark Mode와 Light Mode를 토클버튼으로 on, off될 수 있도록 구현하
 TODO기능을 구현하였고, 체크박스를 누르면 완료표시가 되며, 삭제 버튼도 구현하였다.<br> 
 입력폼, 리스트, 삭제버튼에는 호버기능을 추가하였다.<br> 
 
-<video src="https://user-images.githubusercontent.com/102499247/193012157-3c770af5-14cc-4c8e-a1fa-873cdf91d004.mp4">
+<video src="https://user-images.githubusercontent.com/102499247/193012157-3c770af5-14cc-4c8e-a1fa-873cdf91d004.mp4"><br>
 
 
 
