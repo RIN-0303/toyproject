@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>where</title>
+    <title>todoApp</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/_reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,39 +33,47 @@
         </div>
       </header>
       <main>
-        <h2 class="clock"></h2>
-        <h2 class="date"></h2>
-        <form
-          action="https://search.naver.com/search.naver"
-          method="GET"
-          id="search"
-        >
-          <div class="search-bar">
-            <i class="ic-search"></i>
-            <input
-              class="keyword"
-              type="text"
-              name="query"
-              maxlength="255"
-              value=""
-              autocomplete="off"
-              placeholder="검색어를 입력하세요."
-            />
-          </div>
-        </form>
-        <div id="todo-box">
-          <p class="title">TODO LIST</p>
-          <form id="todo-form">
-            <input
-              id="todo-input"
-              type="text"
-              placeholder="Add your todo"
-              required
-              autocomplete="off"
-            />
+        <section class="clock-container">
+          <h2 class="clock"></h2>
+        </section>
+        <section class="date-container">
+          <h2 class="date"></h2>
+        </section>
+        <section class="search-container">
+          <form
+            action="https://search.naver.com/search.naver"
+            method="GET"
+            id="search"
+          >
+            <div class="search-bar">
+              <i class="ic-search"></i>
+              <input
+                class="keyword"
+                type="text"
+                name="query"
+                maxlength="255"
+                value=""
+                autocomplete="off"
+                placeholder="검색어를 입력하세요."
+              />
+            </div>
           </form>
-          <ul id="todo-list"></ul>
-        </div>
+        </section>
+        <section class="todo-container">
+          <div id="todo-box">
+            <p class="title">TODO LIST</p>
+            <form id="todo-form">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="Add your todo"
+                required
+                autocomplete="off"
+              />
+            </form>
+            <ul id="todo-list"></ul>
+          </div>
+        </section>
       </main>
     </div>
 
