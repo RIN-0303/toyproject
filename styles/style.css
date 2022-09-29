@@ -27,7 +27,7 @@ header {
 
 /* Weather CSS */
 .weather {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .weatherInfo {
   font-size: 5px;
@@ -76,7 +76,9 @@ header {
   position: relative;
   display: inline-block;
 }
-
+.toggle-box {
+  margin-top: 2px;
+}
 .toggle input {
   display: none;
 }
@@ -255,7 +257,9 @@ header {
     width: 100%;
     height: fit-content;
   }
-
+  .toggle-box {
+    margin-top: 3px;
+  }
   .ic-moon {
     font-size: 12px;
   }
@@ -568,9 +572,11 @@ header {
     width: 95%;
     height: 100%;
   }
-
+  .toggle-box {
+    margin-top: 30px;
+  }
   .ic-moon {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .toggle label {
@@ -598,7 +604,7 @@ header {
   }
 
   .weatherInfo {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 8px;
     margin-left: 18px;
   }
