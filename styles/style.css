@@ -16,25 +16,28 @@ body {
   padding-bottom: 30px;
   width: 1250px;
   height: auto;
-  border-radius: 30px;
+  border-radius: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
 }
 
 /* Weather CSS */
 .weather {
-  display: flex;
+  margin-bottom: 10px;
 }
-
 .weatherInfo {
-  font-size: 15px;
+  font-size: 5px;
   color: lightslategray;
-  margin-top: 4px;
-  margin-left: 12px;
+  margin-left: 5px;
 }
 
 .w-img {
   width: 2.2em;
-  margin-top: -2px;
-  margin-left: -5px;
+  transform: translate(0%, 25%);
 }
 
 /* Clock CSS */
@@ -189,7 +192,7 @@ body {
 }
 
 #todo-list {
-  width: 400px;
+  width: 100%;
   height: 380px;
   margin-left: 10%;
   overflow-y: auto;
@@ -247,7 +250,7 @@ body {
   box-shadow: inset 0px 0px 5px white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   #container {
     width: 100%;
     height: fit-content;
@@ -280,9 +283,8 @@ body {
   /* Weather CSS */
 
   .weatherInfo {
+    width: 100%;
     font-size: 5px;
-    margin-top: 15px;
-    margin-left: 12px;
   }
 
   .w-img {
@@ -340,10 +342,10 @@ body {
   }
 
   #todo-list {
-    width: 90%;
+    width: 100%;
     height: 300px;
     font-size: 5px;
-    margin: 10px 15px;
+    margin: 15px 5px 15px 42px !important;
   }
 
   .delBtn {
@@ -384,8 +386,7 @@ body {
 
   .weatherInfo {
     font-size: 12px;
-    margin-top: 15px;
-    margin-left: 12px;
+    width: 100%;
   }
 
   .w-img {
@@ -489,7 +490,7 @@ body {
 
   .weatherInfo {
     font-size: 12px;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-left: 12px;
   }
 
@@ -592,16 +593,19 @@ body {
   }
 
   /* Weather CSS */
+  .weather {
+    margin-top: 10px;
+  }
 
   .weatherInfo {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-left: 18px;
   }
 
   .w-img {
     width: 35px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 0;
   }
 
