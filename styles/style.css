@@ -25,7 +25,7 @@ body {
 }
 
 .weatherInfo {
-  font-size: 0.9em;
+  font-size: 15px;
   color: lightslategray;
   margin-top: 4px;
   margin-left: 12px;
@@ -97,7 +97,7 @@ body {
 .toggle label::before {
   width: 100%;
   height: 100%;
-  background-color: #eee1e1;
+  background-color: #c4b8b8;
   border-radius: 1em;
   transition: background-color 0.25s ease;
 }
@@ -158,10 +158,10 @@ body {
 /* TODO CSS */
 
 #todo-box {
-  margin: 0 auto;
-  padding-bottom: 3px;
   width: 40%;
   height: 100%;
+  margin: 0 auto;
+  padding-bottom: 3px;
   box-shadow: -3px -5px 9px rgba(255, 255, 255, 0.45),
     3px 2px 9px -5px rgba(94, 104, 121, 0.3);
   border: none;
@@ -197,16 +197,16 @@ body {
 }
 
 .delBtn {
+  height: 20px;
   font-size: 5px;
   color: red;
   font-weight: bold;
   background-color: #faf2f2;
   border: #ffffff;
+  border-radius: 10px;
   box-shadow: 1px 1px 1px 1px #e9dfdf;
   cursor: pointer;
-  border-radius: 10px;
   margin-top: 5px;
-  height: 20px;
 }
 
 .delBtn:hover {
@@ -235,6 +235,7 @@ body {
 }
 
 /* scrollbar CSS */
+
 #todo-list::-webkit-scrollbar-thumb {
   background-color: rgb(240, 218, 148);
   border-radius: 10px;
@@ -244,4 +245,427 @@ body {
   background-color: rgb(85, 80, 80);
   border-radius: 10px;
   box-shadow: inset 0px 0px 5px white;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .ic-moon {
+    font-size: 12px;
+  }
+
+  .toggle label {
+    width: 18px;
+    height: 10px;
+    text-indent: -50%;
+  }
+
+  .toggle label::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle label::after {
+    width: 10px;
+    height: 10px;
+  }
+
+  .toggle input:checked + label::after {
+    left: 8px;
+  }
+
+  /* Weather CSS */
+
+  .weatherInfo {
+    font-size: 5px;
+    margin-top: 15px;
+    margin-left: 12px;
+  }
+
+  .w-img {
+    width: 20px;
+    margin-top: 13px;
+    margin-left: -2px;
+  }
+
+  /* Clock CSS */
+  .clock {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .date {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  /* Search CSS */
+
+  .search-bar {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .keyword {
+    font-size: 5px;
+    padding-left: 20px;
+    width: 60%;
+    height: 20px;
+  }
+
+  .ic-search::before {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+  /* TODO CSS */
+
+  #todo-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  #todo-input {
+    width: 100%;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+  }
+
+  #todo-list {
+    width: 90%;
+    height: 300px;
+    font-size: 5px;
+    margin: 10px 15px;
+  }
+
+  .delBtn {
+    font-size: 5px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #container {
+    width: 95%;
+    height: fit-content;
+  }
+
+  .ic-moon {
+    font-size: 18px;
+  }
+
+  .toggle label {
+    width: 30px;
+    height: 15px;
+  }
+
+  .toggle label::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle label::after {
+    width: 15px;
+    height: 15px;
+  }
+
+  .toggle input:checked + label::after {
+    left: 15px;
+  }
+
+  /* Weather CSS */
+
+  .weatherInfo {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 12px;
+  }
+
+  .w-img {
+    width: 25px;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+
+  /* Clock CSS */
+  .clock {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .date {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  /* Search CSS */
+
+  .search-bar {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .keyword {
+    font-size: 12px;
+    padding-left: 25px;
+    width: 70%;
+    height: 35px;
+  }
+
+  .ic-search::before {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  /* TODO CSS */
+
+  #todo-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  #todo-input {
+    width: 100%;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+  }
+
+  #todo-list {
+    width: 90%;
+    height: 300px;
+    font-size: 14px;
+    margin: 15px 15px;
+  }
+
+  .delBtn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #container {
+    width: 95%;
+    height: fit-content;
+  }
+
+  .ic-moon {
+    font-size: 20px;
+  }
+
+  .toggle label {
+    width: 35px;
+    height: 18px;
+  }
+
+  .toggle label::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle label::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .toggle input:checked + label::after {
+    left: 18px;
+  }
+
+  /* Weather CSS */
+
+  .weatherInfo {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 12px;
+  }
+
+  .w-img {
+    width: 25px;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+
+  /* Clock CSS */
+  .clock {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .date {
+    margin-top: 0;
+    font-size: 28px;
+  }
+
+  /* Search CSS */
+
+  .search-bar {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .keyword {
+    font-size: 12px;
+    padding-left: 30px;
+    width: 70%;
+    height: 35px;
+  }
+
+  .ic-search::before {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  /* TODO CSS */
+
+  #todo-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  #todo-input {
+    width: 100%;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+  }
+
+  #todo-list {
+    width: 93%;
+    height: 300px;
+    font-size: 15px;
+    margin: 15px 15px 15px 30px;
+  }
+
+  .delBtn {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #container {
+    width: 95%;
+    height: 100%;
+  }
+
+  .ic-moon {
+    font-size: 35px;
+  }
+
+  .toggle label {
+    width: 50px;
+    height: 25px;
+  }
+
+  .toggle label::before {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle label::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .toggle input:checked + label::after {
+    left: 25px;
+  }
+
+  /* Weather CSS */
+
+  .weatherInfo {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+
+  .w-img {
+    width: 35px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  /* Clock CSS */
+  .clock {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .date {
+    margin-top: 0;
+    font-size: 45px;
+  }
+
+  /* Search CSS */
+
+  .search-bar {
+    margin-top: 70px;
+    margin-bottom: 65px;
+  }
+
+  .keyword {
+    font-size: 20px;
+    padding-left: 40px;
+    width: 80%;
+    height: 50px;
+  }
+
+  .ic-search::before {
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  /* TODO CSS */
+
+  #todo-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  #todo-input {
+    width: 100%;
+    height: 50px;
+  }
+
+  .title {
+    font-size: 25px;
+    margin: 50px 0 0 0;
+    padding: 20px;
+  }
+
+  #todo-list {
+    width: 93%;
+    height: 400px;
+    font-size: 20px;
+    margin: 30px 10px 30px 50px;
+  }
+
+  .delBtn {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
 }
