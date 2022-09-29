@@ -9,7 +9,6 @@
 https://extraordinary-alfajores-fddedd.netlify.app/
 
 
-
 -----
 ### ⭐STACKS 
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
@@ -19,6 +18,12 @@ https://extraordinary-alfajores-fddedd.netlify.app/
 ### 📒Description
 
 🔹Implemented Features
+
+✅Responsive <br>
+<video src="https://user-images.githubusercontent.com/102499247/193012332-011cc8f0-5bad-4883-89eb-62f38c5ca134.mp4"><br>
+반응형으로 구현하였다.
+
+
 
 ✅Weather API<br>
 <img src="https://user-images.githubusercontent.com/102499247/174254285-4efb9c39-4117-419a-9b4e-9b0d508e97fe.png" width="20%" height="10%"><br>
@@ -30,6 +35,11 @@ https://extraordinary-alfajores-fddedd.netlify.app/
 <img src="https://user-images.githubusercontent.com/102499247/174255069-70734fa1-dc58-4381-a433-fac36c94e970.png" width="10%" height="5%"><br>
 Dark Mode와 Light Mode를 토클버튼으로 on, off될 수 있도록 구현하였다.<br>
 또한 로컬스토리지에 저장하여 새로고침하거나, 세션을 종료해도 유지될 수 있도록 하였다.<br>
+
+
+
+<video src="https://user-images.githubusercontent.com/102499247/193011975-b0db44f9-9b32-41bb-9529-b0cecbee8d75.mp4">
+
 
 
 ✅Clock & Date<br>
@@ -46,15 +56,14 @@ Dark Mode와 Light Mode를 토클버튼으로 on, off될 수 있도록 구현하
 TODO기능을 구현하였고, 체크박스를 누르면 완료표시가 되며, 삭제 버튼도 구현하였다.<br> 
 입력폼, 리스트, 삭제버튼에는 호버기능을 추가하였다.<br> 
 
+<video src="https://user-images.githubusercontent.com/102499247/193012157-3c770af5-14cc-4c8e-a1fa-873cdf91d004.mp4">
+
+
+
 -----
 
 ### ✒️Comment
 기능을 하나씩 만들때마다 많은 난관에 부딪혔지만, 열심히 구글링해가며 결국엔 완성해내서 굉장히 뿌듯하다.<br>
 문제에 부딪혔을 때, 해결해나가는 과정으로 인해 조금 더 성장한 것 같고, <br>
 모르는 부분은 더 공부하며, 구현해내려고 노력하였기때문에 알찬 프로젝트였다.<br>
-그때 그때 깃헙에 커밋하며 개발했으면, 어떤 문제들과 어떻게 해결했는지 남길 수 있어 내가 얼마나 열심히 했는지!!!<br>
-남길 수 있었을텐데 나만 알게 되어 이 부분이 조금 아쉽다.🤪<br>
-그래도 확실히 공부는 되었으니 다음 프로젝트도 생각해봐야겠다.😊
-
-
 
